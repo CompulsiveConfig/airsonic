@@ -424,7 +424,7 @@ public class SettingsService {
         cachedMusicFileTypesArray = null;
     }
 
-    synchronized String[] getMusicFileTypesAsArray() {
+    public synchronized String[] getMusicFileTypesAsArray() {
         if (cachedMusicFileTypesArray == null) {
             cachedMusicFileTypesArray = toStringArray(getMusicFileTypes());
         }
